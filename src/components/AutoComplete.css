@@ -1,0 +1,114 @@
+/* AutoComplete.css */
+
+/* Container for the autocomplete */
+.autocomplete-container {
+    position: relative; /* Relative positioning for absolute elements */
+    width: 100%; /* Full width of the parent container */
+    font-family: inherit; /* Inherit font from parent */
+}
+
+/* Wrapper around the input field */
+.autocomplete-input-wrapper {
+    display: flex; /* Flexbox for layout */
+    position: relative; /* Position relative to allow for absolute children */
+    border: 1px solid #d1d1d1; /* Light gray border around input wrapper */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Prevents content from overflowing */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover/focus */
+}
+
+/* Adds a subtle focus effect when the input is focused */
+.autocomplete-input-wrapper:focus-within {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15); /* Blue focus ring */
+}
+
+/* Styles for the input field */
+.autocomplete-input {
+    width: 100%; /* Full width of the input */
+    padding: 14px 40px 14px 16px; /* Padding inside the input */
+    font-size: 16px; /* Font size for input text */
+    border: none; /* No border */
+    outline: none; /* Remove default browser outline */
+    background-color: #f5f5f5; /* Light gray background for input */
+    border-radius: 12px; /* Rounded corners for the input */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Change input background color when focused */
+.autocomplete-input:focus {
+    background-color: #fff; /* Change to white background on focus */
+}
+
+/* Styling for the dropdown list of suggestions */
+.autocomplete-list {
+    position: absolute; /* Position it below the input */
+    top: 100%; /* Places the dropdown right below the input */
+    left: 0; /* Aligns to the left */
+    width: 100%; /* Full width of the parent */
+    max-height: 220px; /* Maximum height for scrolling */
+    margin-top: 8px; /* Small margin on top */
+    padding: 0; /* Remove padding */
+    list-style: none; /* No list styling */
+    background-color: white; /* White background for dropdown */
+    border-radius: 12px; /* Rounded corners for the dropdown */
+    overflow-y: auto; /* Scrollable if the list is too long */
+    z-index: 10; /* Ensure it is above other elements */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Shadow for dropdown */
+}
+
+/* Styles for each item in the dropdown */
+.autocomplete-list-item {
+    padding: 12px 18px; /* Padding inside each list item */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 15px; /* Font size for the items */
+    transition: background-color 0.2s ease; /* Smooth hover transition */
+    color: #555; /* Softer gray color for text */
+}
+
+/* Hover and active states for dropdown items */
+.autocomplete-list-item:hover,
+.autocomplete-list-item.active {
+    background-color: #e6f0ff; /* Light blue background for hover/active */
+    color: #007bff; /* Blue color for text on hover/active */
+}
+
+/* Clear icon inside the input field */
+.clear-icon {
+    position: absolute; /* Positioned relative to the input wrapper */
+    right: 12px; /* Positioned 12px from the right */
+    top: 50%; /* Vertically centered */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #aaa; /* Light gray color for the clear icon */
+    transition: color 0.2s ease; /* Smooth transition for hover */
+    background: none; /* No background */
+    border: none; /* No border */
+    padding: 0; /* Remove default padding */
+    font-size: 18px; /* Font size for the icon */
+}
+
+/* Change color when hovering over the clear icon */
+.clear-icon:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+/* Scrollbar styling for dropdown list */
+.autocomplete-list::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+/* Styling for the scrollbar track */
+.autocomplete-list::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray background for the track */
+}
+
+/* Styling for the scrollbar thumb */
+.autocomplete-list::-webkit-scrollbar-thumb {
+    background: #c0c0c0; /* Gray color for the thumb */
+    border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+.autocomplete-list::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0; /* Darker gray on hover */
+}

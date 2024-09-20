@@ -1,0 +1,48 @@
+/* Global styles */
+body {
+    background-color: #f0f2f5; /* Light gray background */
+    font-family: "Poppins", sans-serif; /* Sets the font to Poppins */
+    color: #333; /* Sets a dark gray color for text */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Main content container styling */
+.content {
+    background-color: white; /* White background for the content box */
+    padding: 40px; /* Padding inside the content box */
+    border-radius: 16px; /* Rounded corners for the content box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    width: 100%; /* Full width of the parent container */
+    max-width: 500px; /* Maximum width of 500px */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center;
+}
+
+/* Add extra shadow effect when the content is hovered */
+.content:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08); /* Larger shadow on hover */
+}
+
+/* Button styles */
+.debug {
+    padding: 8px; /* Padding inside the button */
+    margin-top: 20px; /* Margin on top */
+    font-size: 14px; /* Font size for button text */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 12px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.debug-enabled {
+    background-color: #ff3c00; /* Red background */
+}
+
+.debug-disabled {
+    background-color: #007bff; /* Blue background */
+}
