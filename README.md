@@ -21,3 +21,7 @@ Alternatively, you can test the application in:
 # Questionnaire
 
 -   Open the file in the root folder: `QUESTIONNAIRE_ANSWERS.md`
+
+# Screenshot
+
+![Screenshot of Application](public/screenshot.jpeg)
